@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Particles.js</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="particles.js"></script>
+</head>
+<body oncontextmenu="return false;">
+    <div id="particles-js"></div>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 250,
+                    density: {
+                        enable: true,
+                        value_area: 1200
+                    }
+                },
+                color: {
+                    // Darker shade of line color
+                    value: "#ffffff"
+                },
+                shape: {
+                    type: "circle"
+                },
+                opacity: {
+                    value: 0.5
+                },
+                size: {
+                    value: 0.4
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ff9999",
+                    opacity: 0.8,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 0.7
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    onclick: {
+                        enable: false
+                    },
+                    onclick: {
+                    enable: false
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 150,
+                        line_linked: {
+                            opacity: 0.6
+                        }
+                    },
+                }
+
+            },
+            retina_detect: true
+
+        });
+    </script>
+</body>
+</html>

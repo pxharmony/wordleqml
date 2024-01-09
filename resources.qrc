@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>WordleView.qml</file>
+        <file>WordleConstants.js</file>
+        <file>ButtonWordle.qml</file>
+        <file>particles.html</file>
+        <file>particles.js</file>
+        <file>ToastMessage.qml</file>
+    </qresource>
+</RCC>
