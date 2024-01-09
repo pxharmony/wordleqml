@@ -213,11 +213,11 @@ Rectangle {
         currentAttempt++;
 
         var isGameWin = true
-        if(currentAttempt >= WordleConstants.maxAttempts) {
-            showToastMessage(!isGameWin);
-        }
-        else if (currentGuess.toUpperCase() === secretWord){
+        if (currentGuess.toUpperCase() === secretWord){
             showToastMessage(isGameWin);
+        }
+        else if(currentAttempt >= WordleConstants.maxAttempts) {
+            showToastMessage(!isGameWin);
         }
 
         guessedWords.push(currentGuess);
